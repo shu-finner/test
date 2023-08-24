@@ -30,6 +30,10 @@ module.exports = {
           process.env.WPGRAPHQL_URL ||
           `https://wpgatsbydemo.wpengine.com/graphql`,
       },
+      schema: {
+          //Prefixes all WP Types with "Wp" so "Post and allPost" become "WpPost and allWpPost".
+          typePrefix: `Wp`,
+        },
     },
 
     /**
